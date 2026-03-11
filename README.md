@@ -1,84 +1,143 @@
 # Project Management Tool (MERN Stack)
 
-## Overview
-
-This is a simple **Project Management Tool** built with the **MERN Stack (MongoDB, Express, React, Node.js)**.
-It allows users to manage projects, boards, and tasks in a Kanban-style workflow.
+A simple **Project Management Tool inspired by Jira**, built using the **MERN Stack (MongoDB, Express.js, React, Node.js)**.
+The application allows users to manage projects, organize work into boards, and track tasks using a drag-and-drop workflow.
 
 ---
 
-## Features
+## 🚀 Features
 
-* User **Register / Login**
-* **Create Projects**
-* **Create Boards** inside projects
-* **Create Tasks** inside boards
-* **Update Tasks**
-* **Drag & Drop** tasks to change their status
-* **Dark Mode Support**
-* **Swagger API Documentation**
-
----
-
-## Prerequisites
-
-Make sure you have installed:
-
-* Node.js
-* npm
-* MongoDB (running locally or via connection string)
+- User **Authentication (Register / Login)**
+- **Create and manage projects**
+- **Boards inside projects**
+- **Task management**
+- **Drag & Drop tasks** to update status
+- **Update and edit tasks**
+- **Dark mode support**
+- **REST API with Swagger documentation**
 
 ---
 
-## Running the Project
+## 🛠 Tech Stack
 
-### 1. Start the Frontend
+**Frontend**
 
-Open a terminal and run:
+- React
+- Vite
+- Tailwind CSS (if used)
 
-```powershell
-cd frontend
-npm run dev
+**Backend**
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+**Other Tools**
+
+- Swagger (API Documentation)
+- JWT Authentication
+
+---
+
+## 📂 Project Structure
+
+```
+project-management-tool
+│
+├── backend
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── middleware
+│   └── server.js
+│
+├── frontend
+│   ├── src
+│   ├── components
+│   ├── pages
+│   └── main.jsx
+│
+└── README.md
 ```
 
-### 2. Start the Backend
+---
 
-Open another terminal and run:
+## ⚙️ Installation & Setup
 
-```powershell
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/your-username/project-management-tool.git
+cd project-management-tool
+```
+
+---
+
+### 2️⃣ Setup Backend
+
+```
 cd backend
+npm install
 npm run dev
+```
+
+Backend will start on:
+
+```
+http://localhost:5000
 ```
 
 ---
 
-## Accessing the Application
+### 3️⃣ Setup Frontend
 
-Once both servers are running, open the frontend in your browser (usually shown in the terminal after running `npm run dev`).
+Open another terminal:
 
-You can then:
+```
+cd frontend
+npm install
+npm run dev
+```
 
-* Register a new account
-* Login
-* Create projects
-* Create boards inside projects
-* Create and manage tasks
+Frontend will start on:
 
----
-
-## API Documentation (Swagger)
-
-After starting the backend server, you can view the API documentation at:
-
-http://localhost:5000/api-docs/
-
-Swagger allows you to explore and test all backend APIs.
+```
+http://localhost:5173
+```
 
 ---
 
-## Notes
+## 📖 API Documentation
 
-* Make sure the backend server is running before using the frontend.
-* The database connection should be configured in the backend environment variables.
+Swagger documentation is available at:
+
+```
+http://localhost:5000/api-docs
+```
+
+You can test all backend APIs directly from the Swagger UI.
 
 ---
+
+## 🌙 UI Features
+
+- Kanban-style task board
+- Drag & drop task status update
+- Dark mode toggle
+
+---
+
+## 📌 Future Improvements
+
+- Adding Users
+- File attachments
+- Notifications
+- Role-based access control
+
+---
+
+## 👩‍💻 Author
+
+Dishita
+Full Stack Developer (MERN)
